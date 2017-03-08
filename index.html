@@ -1,16 +1,24 @@
 <html>
 <head>
     <title>Get GPII</title>
-
+    <link rel="icon" href="gpii64x64.png" type="image/png" />
     <style>
     body {
-        background-color: lightgray;
         font-family: sans-serif;
         margin: auto;
     }
+    #imgheader {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #header {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+    }
     #outbox   {
-        background-color: rgb(147, 147, 147);
-        width: 300px;
+        width: 230px;
         height: 100px;
         padding: 10px;
         margin-left: auto;
@@ -23,23 +31,37 @@
         font-size: xx-large;
         text-align: center;
     }
+    #statement    {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: large;
+        text-align: center;
+    }
     #textname {
         margin-left: auto;
         margin-right: auto;
-        font-size: x-large;
-        text-align: center;
+        font-size: large;
+        text-align: left;
     }
     </style>
 </head>
 <body>
+    <div id="header">
+    <img alt="GPII logo" id="imgheader" src="gpii512x512.png" />
+    </div>
     <div id="title">
     Get GPII
     </div>
-    <div id="textname">
-    <a href="https://github.com/GPII/windows/releases/latest">for windows</a>
+    <div id="statement">
+    For testing only
     </div>
-    <div id="textname">
-    <a href="https://github.com/GPII/linux/releases/latest">for linux</a>
-    </div>
+    <ul id="outbox">
+    <li id="textname">
+    <a href="https://github.com/gloob/gpii-app/releases/download/0.0.1/GPII-App.001-32.msi">Installer for windows (32bits)</a>
+    </li>
+    <li id="textname">
+    <a href="https://github.com/GPII/linux/releases/latest">Installer for linux</a>
+    </li>
+    </ul>
 </body>
 </html>
